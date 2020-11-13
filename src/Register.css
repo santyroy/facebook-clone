@@ -1,0 +1,136 @@
+.register {
+  background-color: #e9ebee;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register__container {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  padding: 20px;
+  background-color: #e9ebee;
+  flex-direction: column;
+}
+
+.register__container > h1 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.register__container > h3 {
+  font-weight: 300;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register__container > form > center > input {
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: white;
+  width: 400px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+}
+
+.register__container > form > center > input::-webkit-input-placeholder {
+  font-size: 20px;
+  color: rgb(170, 170, 170);
+  padding-left: 10px;
+}
+
+.register__register {
+  background-color: #42b72a;
+  border: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.register__name {
+  height: 36px !important;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  background-color: white;
+  width: 195px !important;
+  border: 0.5px solid;
+  border-radius: 5px;
+}
+
+.register__gender {
+  display: flex;
+  color: rgb(144, 148, 156);
+  font-size: 18px;
+  margin-left: 85px;
+}
+
+.register__day {
+  height: 20px;
+  width: 70px;
+  margin-left: 85px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.register__month {
+  height: 20px;
+  width: 70px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.register__year {
+  height: 20px;
+  width: 70px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.register__date {
+  display: flex;
+  color: rgb(144, 149, 156);
+  font-size: 18px;
+  margin-left: 85px;
+}
+
+.register__radioContainer > label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+.register__radioContainer {
+  margin-left: 85px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.register__policy {
+  font-size: small;
+  height: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  font-weight: 400;
+  max-width: 400px;
+  margin-left: 85px;
+  margin-bottom: 10px;
+}
+
+.register__policy > span {
+  color: rgb(56, 148, 208);
+}
