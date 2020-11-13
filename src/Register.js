@@ -20,7 +20,13 @@ function Register() {
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
         console.log(auth);
-        history.push("/login");
+        if (auth.user) {
+          auth.user
+            .updateProfile({ displayName: firstName + " " + lastName })
+            .then(() => {
+              history.push("/login");
+            });
+        }
       })
       .catch((error) => {
         console.error(error.message);

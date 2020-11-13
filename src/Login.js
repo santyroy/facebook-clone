@@ -26,7 +26,25 @@ function Login() {
       })
       .catch((error) => {
         console.log("ERROR OBJECT: " + error);
-        alert(error.message);
+
+        if (
+          error.message ===
+          "The password is invalid or the user does not have a password."
+        ) {
+          alert("Please check your credentials");
+        } else if (
+          error.message ===
+          "There is no user record corresponding to this identifier. The user may have been deleted."
+        ) {
+          history.push("/register");
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            left: 0,
+            behavior: "smooth",
+          });
+        } else {
+          alert(error.message);
+        }
       });
 
     setEmail("");
