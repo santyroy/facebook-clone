@@ -12,7 +12,7 @@ function LoginHeader() {
         <img src={logo} alt="facebook logo" className="header__logo" />
       </Link>
 
-      <Link className="register" to="/register">
+      <Link className="link" to="/register">
         <button className="header__button">Create New Account</button>
       </Link>
     </div>

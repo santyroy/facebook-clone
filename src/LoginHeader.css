@@ -22,9 +22,10 @@
   border-radius: 2px;
   border: none;
   background-color: #42b72a;
-  position: relative;
-  float: left;
-  display: flex;
+  margin-right: 30px;
+  /* position: relative; */
+  /* float: left; */
+  /* display: flex; */
 }
 
 .header__button:hover {
